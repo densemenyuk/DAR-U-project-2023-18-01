@@ -111,6 +111,8 @@ function regInfo() {
     document.getElementById("email-err").classList.remove("registration-error-visible")
   }
 
+  // Проверка зарегистрированого пользователя
+
   // let checkEmailInArr = document.getElementById("email").value;
   // for (let j = 0; j < users.length; j++) {
   //   if (checkEmailInArr === users[j].email) {
