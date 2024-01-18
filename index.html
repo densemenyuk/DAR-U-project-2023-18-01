@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="mobile.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik&display=swap"
         rel="stylesheet">
@@ -15,7 +16,6 @@
 </head>
 
 <body>
-
     <div class="wrapper">
         <div id="login"></div>
         <img class="image_login" src="Images/Login page img.svg" alt="image form">
@@ -45,14 +45,13 @@
     </div>
 
     <container class="wrapper-2">
-        <div id="reg" class="registration">
+        <form id="reg" class="registration">
             <h2 class="header-second">Creat your account</h2>
             <div class="name">
                 <p class="paragraph-info-2">Name</p>
                 <input id="name" class="inputs-two" type="text" placeholder="Enter your Name here"
                     onchange="onNewNameChange()">
                 <span id="name-err" class="registration-error">Please, fill name field</span>
-
             </div>
             <div class="email">
                 <p class="paragraph-info-2">Email</p>
@@ -91,7 +90,7 @@
             <button onclick="regInfo()" class="button-2">Sign-up</button>
             <div class="or-2">- OR -</div>
             <p class="account">Already have an account?<a href="#login">&nbsp Login </a></p>
-        </div>
+        </form>
         <img class="image-form-two"
             src="Images/Finance, e-commerce, startup, workflow _ account, information, user, profile, data.svg"
             alt="image form two">

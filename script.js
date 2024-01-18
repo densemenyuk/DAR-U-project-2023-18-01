@@ -52,6 +52,7 @@ function checkInfo() {
     }
   }
 
+  // window.location.href = 'user-page.html';
 
 
   const v = document.getElementById("myForm");
@@ -80,6 +81,8 @@ function regInfo() {
     gender = 'female'
   }
 
+  
+
   let newUser = {
     name,
     email,
@@ -88,8 +91,22 @@ function regInfo() {
     gender
   };
 
+  // Проверка зарегистрированого пользователя
+
+  let checkEmailInArr = document.getElementById("email").value;
+  for (let i = 0; i < users.length; i++) {
+    if (checkEmailInArr === users[i].email) {
+      alert("A user with this Email is already registered!")
+      return;
+    } else {
+  
+    }
+  }
+
   // Проверка работоспособности кода
   users.push(newUser);
+
+
   console.log("Новый юзер", newUser);
   console.log("Новый массив", users);
 
@@ -110,18 +127,6 @@ function regInfo() {
   } else {
     document.getElementById("email-err").classList.remove("registration-error-visible")
   }
-
-  // Проверка зарегистрированого пользователя
-
-  // let checkEmailInArr = document.getElementById("email").value;
-  // for (let j = 0; j < users.length; j++) {
-  //   if (checkEmailInArr === users[j].email) {
-  //     alert("Пользователь с таким Email уже зарегестрирован!")
-  //     return;
-  //   } else {
-  
-  //   }
-  // }
 
   // Пароль регистрации
   let passwordRegistration = document.getElementById("password").value;
